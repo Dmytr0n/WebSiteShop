@@ -1,0 +1,32 @@
+/* Перевизначення стилів для кнопок пагінації */
+.pagination .page-item .page-link {
+    background-color: #007bff !important;  /* Основний колір кнопок */
+    color: white !important;               /* Колір тексту */
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Зміна кольору при наведенні */
+.pagination .page-item .page-link:hover {
+    background-color: #0056b3 !important;
+    transform: scale(1.05);
+}
+
+/* Зміна кольору для активної сторінки */
+.pagination .page-item.active .page-link {
+    background-color: #2a5298 !important; /* Червоний для активної сторінки */
+    border-color: #2a5298 !important;
+    font-weight: bold;
+}
+
+/* Зміна кольору при натисканні */
+.pagination .page-item .page-link:active {
+    background-color: #003f7f !important;
+}
+
+/* Колір для заблокованих сторінок */
+.pagination .page-item.disabled .page-link {
+    background-color: #cccccc !important;
+    cursor: not-allowed;
+}

@@ -1,0 +1,125 @@
+/* Стилі для хедеру */
+.custom-navbar {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Той самий градієнт */
+    padding: 10px 15px; /* Можна змінити для налаштування висоти */
+    z-index: 1000; /* Встановлюємо більш високий пріоритет для хедеру */
+    position: relative; /* Для того, щоб інші елементи не перекривали хедер */
+  }
+  
+  /* Кнопка меню */
+  .menu-btn {
+    position: absolute;
+    left: 15px;
+    top: 50%; /* Центруємо по вертикалі */
+    transform: translateY(-50%); /* Для точного центрування */
+    background: #1e3c72;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001;
+    transition: all 0.3s ease;
+  }
+  
+  /* Ефект при наведенні */
+  .menu-btn:hover {
+    background: #2a5298;
+  }
+  
+  /* Логотип/назва сайту */
+  .navbar-title {
+    color: white;
+    font-size: 24px;
+    margin-left: 50px; /* Відстань від кнопки */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Бокова панель (захована за замовчуванням) */
+  .sidebar {
+    position: fixed;
+    top: 60px; /* Починається відразу під хедером */
+    left: -260px;
+    height: calc(100vh - 60px); /* Залишає місце для хедеру */
+    width: 260px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border-radius: 0 15px 15px 0;
+    padding: 20px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: "Arial", sans-serif;
+    transition: all 0.3s ease-in-out;
+    z-index: 999; /* Задаємо нижчий пріоритет, ніж у хедера */
+  }
+  
+  /* Відкрита бокова панель */
+  .sidebar.open {
+    left: 0;
+  }
+  
+  /* Заголовок */
+  .sidebar-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Стилі для списку */
+  .sidebar .list-group {
+    background: transparent;
+  }
+  
+  /* Елементи списку */
+  .sidebar-item {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sidebar-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+  }
+  
+  /* Активний елемент */
+  .sidebar-item.active {
+    background: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    border-left: 5px solid #ffcc00;
+    padding-left: 15px;
+  }
+/* Кнопка для скидання фільтрів */
+.reset-btn {
+    position: absolute;
+    bottom: 10px;  /* Відстань віднизу панелі */
+    left: 50%;
+    transform: translateX(-50%);  /* Вирівнює кнопку по центру */
+    background: rgba(255, 255, 255, 0.15);  /* Прозорий білий фон */
+    color: white;  /* Білий текст */
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 80%;
+}
+
+/* Ефект при наведенні */
+.reset-btn:hover {
+    background: rgba(255, 255, 255, 0.3);  /* Тло при наведенні */
+}

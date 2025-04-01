@@ -1,0 +1,112 @@
+/* Основні стилі */
+.device-container {
+    background-color: #e2effb; /* Світло-сірий фон */
+    color: #2b6cb0; /* Темно-синій текст */
+    font-family: 'Roboto', sans-serif;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .device-name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .device-info-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Гнучкий лейаут для карток */
+    gap: 40px;
+    justify-items: center;
+    padding: 20px 0;
+  }
+  
+  .device-card {
+    background-color: #d1e7f7; /* Світло-синій фон для карток */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 5px solid #3182ce; /* Синя обводка */
+    text-align: left;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .device-card h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin-bottom: 15px;
+    text-transform: capitalize;
+  }
+  
+  .device-card p {
+    font-size: 1.2rem;
+    color: #3182ce;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    font-style: italic;
+  }
+  
+  .device-price {
+    font-size: 1.8rem;
+    color: #28a745;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+  }
+  
+  .device-info-row {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .device-info-row:nth-child(odd) {
+    background-color: #f0f0f0;
+  }
+  
+  .device-info-title {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .device-info-description {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  @media (max-width: 768px) {
+    .device-container {
+      padding: 40px 15px;
+    }
+    .device-card {
+      padding: 20px;
+    }
+    .add-to-cart-btn {
+      padding: 10px 20px;
+    }
+  }
+  
