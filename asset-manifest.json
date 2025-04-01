@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/WebSiteShop/static/css/main.cef90558.css",
-    "main.js": "/WebSiteShop/static/js/main.e6d75a9d.js",
+    "main.js": "/WebSiteShop/static/js/main.69de9cb4.js",
     "static/media/comp-tehnika.png": "/WebSiteShop/static/media/comp-tehnika.bda78eccd44d449db650.png",
     "index.html": "/WebSiteShop/index.html",
     "main.cef90558.css.map": "/WebSiteShop/static/css/main.cef90558.css.map",
-    "main.e6d75a9d.js.map": "/WebSiteShop/static/js/main.e6d75a9d.js.map"
+    "main.69de9cb4.js.map": "/WebSiteShop/static/js/main.69de9cb4.js.map"
   },
   "entrypoints": [
     "static/css/main.cef90558.css",
-    "static/js/main.e6d75a9d.js"
+    "static/js/main.69de9cb4.js"
   ]
 }
