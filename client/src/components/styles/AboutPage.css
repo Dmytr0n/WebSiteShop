@@ -1,0 +1,215 @@
+/* Загальні стилі */
+.about-container {
+    background-color: #e2effb; /* Світло-сірий фон */
+    color: #2b6cb0; /* Темно-синій текст */
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif; /* Сучасний шрифт */
+    font-weight: normal;
+    line-height: 1.7; /* Висота рядка для кращої читаємості */
+    letter-spacing: 0.5px; /* Легке збільшення міжлітерного інтервалу */
+}
+
+/* Заголовок */
+.about-header {
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-header h1 {
+    font-size: 6rem; /* Зменшено розмір */
+    font-weight: bold;
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin: 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Тінь для покращення контрасту */
+}
+
+.about-header p {
+    font-size: 0.5rem; /* Зменшено розмір тексту */
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin: 0;
+    font-style: italic; /* Курсив для акценту */
+    letter-spacing: 0.3px; /* Легке збільшення міжлітерного інтервалу */
+}
+
+/* Основний контент */
+.about-content {
+    padding: 60px 20px;
+}
+
+.about-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.about-image {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    border-radius: 15px; /* Кругла обводка */
+    border: 5px solid #3182ce; /* Синя обводка */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.about-description {
+    max-width: 650px;
+    text-align: left;
+}
+
+.about-description h2 {
+    font-size: 3rem; /* Збільшено розмір заголовка */
+    color: #3182ce;
+    margin-bottom: 15px; /* Додав відступ між заголовком і текстом */
+    text-transform: uppercase; /* Великі літери для підкреслення */
+    letter-spacing: 1px; /* Легке розширення літер */
+    font-weight: bold;
+}
+
+.about-description p {
+    font-size: 1.2rem; /* Зменшено розмір тексту */
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    font-style: italic; /* Текст курсивом для опису */
+}
+
+/* Чому обирають нас */
+.about-reasons {
+    background-color: #e2effb;
+    padding: 60px 20px;
+    text-align: center;
+    
+}
+
+.about-reasons h2 {
+    font-size: 2.5rem; /* Зменшено розмір */
+    font-weight: bold;
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-reasons-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-reason {
+    background-color: #d1e7f7;
+    padding: 40px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px; /* Кругла обводка */
+    border: 5px solid #3182ce; /* Синя обводка */
+    padding: 20px; 
+}
+
+.about-reason h3 {
+    font-size: 1.7rem; /* Зменшено розмір */
+    font-weight: bold;
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px; /* Легке розширення літер */
+}
+
+.about-reason p {
+    font-size: 1.1rem; /* Зменшено розмір тексту */
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+    text-align: left; /* Вирівнювання по лівому краю */
+    width: 100%; /* Забезпечує використання всієї ширини */
+    display: block; /* Текст займає всю ширину батьківського елемента */
+}
+.about-contact-flex {
+    display: flex;
+    justify-content: space-between; /* Розмістить елементи по краях */
+    align-items: center; /* Центрує елементи по вертикалі */
+    gap: 20px;
+    padding: 60px 20px;
+}
+
+
+.about-contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+    text-transform: uppercase;
+    margin: 0; /* Прибираємо відступи з заголовка */
+}
+
+
+.about-contact p {
+    font-size: 1.2rem; /* Зменшено розмір тексту */
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin: 15px 0;
+}
+
+.email {
+    font-size: 1.2rem; /* Зменшено розмір тексту */
+    font-weight: bold;
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.button {
+    font-size: 1.2rem; /* Зменшено розмір тексту на кнопці */
+    font-weight: bold;
+    padding: 0.7rem 1.4rem; /* Пропорційно до тексту */
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #1e3c72, #2a5298);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-transform: uppercase; /* Великі літери */
+    display: inline-flex; /* Розмістити кнопку в одному рядку */
+    align-items: center; /* Вирівнювання по вертикалі */
+    justify-content: center; /* Вирівнювання по горизонталі */
+    outline: none; /* Прибирає обводку при фокусуванні */
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #2a5298, #1e3c72); /* Інший напрямок градієнта при наведенні */
+    transform: scale(1.05); /* Легке збільшення при наведенні */
+}
+
+
+.home-button {
+    font-size: 1.2rem; /* Такий самий розмір тексту */
+    font-weight: bold;
+    padding: 0.7rem 1.4rem;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #1e3c72, #2a5298);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-button:hover {
+    background: linear-gradient(45deg, #2a5298, #1e3c72); /* Інший напрямок градієнта при наведенні */
+    transform: scale(1.05); /* Легке збільшення при наведенні */
+}

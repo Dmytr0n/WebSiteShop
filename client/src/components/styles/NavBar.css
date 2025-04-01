@@ -1,0 +1,191 @@
+.custom-navbar {
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-title:hover {
+    color: #0091ff;
+}
+
+/* Стилізація меню-ікони */
+.menu-btn,
+.nav-link,
+#user-dropdown {
+    background-color: #0091ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ховер-ефект для кнопок */
+.menu-btn:hover,
+.nav-link:hover,
+#user-dropdown:hover {
+    background-color: #0077cc;
+    transform: scale(1.05);
+    color: black; /* Зміна кольору тексту на чорний */
+}
+
+/* Серч-бар чітко посередині */
+.search-bar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-bar input {
+    border-radius: 20px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+    border-color: #0091ff;
+    box-shadow: none; /* Вимкнення підсвітки */
+}
+
+/* Нормальна кнопка пошуку */
+.search-bar button {
+    background-color: #0091ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #0077cc;
+    transform: scale(1.05);
+    color: black; /* Зміна кольору тексту на чорний при ховері */
+}
+
+/* Покращення кнопок кошика та авторизації */
+.nav-link {
+    color: white;
+    font-size: 1.4rem;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: black;;
+    transform: scale(1.1);
+}
+
+#user-dropdown {
+    
+    font-size: 1.4rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+#user-dropdown:hover {
+    background-color: #0077cc;
+    transform: scale(1.05);
+    color: black; /* Зміна кольору тексту на чорний при ховері */
+}
+
+.dropdown-menu {
+    min-width: 150px;
+    text-align: center;
+    background-color: #0091ff; /* Світло-синій фон */
+    color: white; /* Білий колір тексту */
+    border-radius: 5px; /* Закруглені кути */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для меню */
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.dropdown-menu .dropdown-item {
+    background-color: #0091ff; /* Світло-синій фон для кожного елементу */
+    color: white; /* Білий колір тексту */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.rem;
+}
+
+
+
+/* Анімація появи */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.autocomplete-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #0091ff;
+    border: 1px solid #0091ff;
+    border-radius: 10px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    color: white; /* Колір тексту - білий */
+}
+
+.suggestion-item:hover {
+    background-color: #0077cc;
+    color: white; /* Текст залишається білим при наведенні */
+}
+
+.auth-btn {
+    background-color: #0091ff; /* Світло-синій фон */
+    color: white; /* Білий текст */
+    border: none;
+    border-radius: 8px; /* Більше округлення для сучасного вигляду */
+    padding: 6px 12px; /* Менший розмір кнопки */
+    font-size: 1rem; /* Зменшений шрифт */
+    font-family: 'Poppins', sans-serif; /* Стильний шрифт */
+    font-weight: 500; /* Легке потовщення для кращого вигляду */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15); /* Легка тінь */
+}
+
+.auth-btn:hover {
+    background-color: #0077cc;
+    color: black;
+    transform: scale(1.07);
+}

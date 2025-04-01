@@ -1,0 +1,63 @@
+.card {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background: #e0f2fe;
+    color: #1e3a8a;
+    font-family: Roboto, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .tab {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+    border: 2px solid #1e40af;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .tab.active {
+    background: #1e40af;
+    color: white;
+  }
+  
+  .tab:hover {
+    transform: scale(1.05);
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .content {
+    padding: 15px;
+    background: #bfdbfe;
+    border: 2px solid #1e40af;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  

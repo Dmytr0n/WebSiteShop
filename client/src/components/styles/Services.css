@@ -1,0 +1,82 @@
+/* Основні стилі */
+.additional-services {
+    background-color: #e2effb; /* Світло-сірий фон */
+    color: #2b6cb0; /* Темно-синій текст */
+    font-family: 'Roboto', sans-serif;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .additional-services h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Гнучкий лейаут для карток */
+    gap: 40px;
+    justify-items: center;
+    padding: 20px 0;
+  }
+  
+  .service-card {
+    background-color: #d1e7f7; /* Світло-синій фон для карток */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 5px solid #3182ce; /* Синя обводка */
+    text-align: left;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin-bottom: 15px;
+    text-transform: capitalize;
+  }
+  
+  .service-card p {
+    font-size: 1.2rem;
+    color: #3182ce;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    font-style: italic;
+  }
+  
+  /* Останній абзац */
+  .additional-services p {
+    font-size: 1.2rem;
+    color: #2b6cb0;
+    margin-top: 40px;
+    font-style: italic;
+  }
+
+  .table-container {
+    width: 100%;
+    max-width: 700px;  /* Задайте максимальну ширину контейнера */
+    margin: 0 auto;  /* Центрує таблицю на сторінці */
+    padding: 20px;
+    background-color: #f9f9f9; /* Легкий фон, щоб виділити таблицю */
+    border-radius: 8px; /* Округлені кути */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тінь для кращого вигляду */
+    overflow: hidden; /* Сховає елементи, які виходять за межі */
+    border: 4px solid #3182ce; /* Легка синя рамка */
+  }
+  
+  .table-container iframe {
+    width: 100%;
+    height: 210px; /* Можна змінювати в залежності від висоти таблиці */
+    border: none; /* Прибирає рамку iframe */
+    border-radius: 8px; /* Округлені кути для iframe */
+  }
+  
+  

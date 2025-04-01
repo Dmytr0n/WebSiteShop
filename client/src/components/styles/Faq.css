@@ -1,0 +1,97 @@
+/* Загальні стилі для FAQ */
+.faq-container {
+    background-color: #e2effb; /* Світло-сірий фон */
+    color: #2b6cb0; /* Темно-синій текст */
+    min-height: 100vh; /* Висота на весь екран */
+    font-family: 'Roboto', sans-serif; /* Сучасний шрифт */
+    font-weight: normal;
+    line-height: 1.5; /* Зменшення висоти рядка */
+    letter-spacing: 0.3px; /* Легке збільшення міжлітерного інтервалу */
+    padding: 20px; /* Зменшення відступів */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  /* Заголовок */
+  .faq-container h2 {
+    font-size: 2rem; /* Зменшення розміру заголовка */
+    color: linear-gradient(135deg, #1e3c72, #2a5298); /* Градієнт */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.8px; /* Легке розширення літер */
+    margin-bottom: 20px; /* Зменшення відступу */
+  }
+  
+  /* Список питань */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Зменшення проміжку між елементами */
+    width: 100%; /* Розтягнення на весь екран */
+    max-width: 800px; /* Обмеження по ширині */
+    padding: 0 10px; /* Зовнішні відступи для вирівнювання */
+    flex-grow: 1; /* Займати всю доступну висоту */
+    margin-bottom: 40px; /* Щоб питання не накладалися на футер */
+    box-sizing: border-box;
+  }
+  
+  /* Стиль кожного питання */
+  .faq-item {
+    background-color: #d1e7f7; /* Світло-синій фон для кожного елементу */
+    padding: 12px; /* Зменшення відступів */
+    border-radius: 8px; /* Зменшення радіусу */
+    border: 4px solid #3182ce; /* Зменшення товщини обводки */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Стиль для питання при наведенні */
+  .faq-item:hover {
+    transform: scale(1.03);
+    background-color: #c6d9f7; /* Легке затемнення при наведенні */
+  }
+  
+  /* Стиль тексту питання */
+  .faq-question {
+    font-size: 1.1rem; /* Зменшення розміру тексту */
+    color: #2b6cb0;
+    font-weight: bold;
+  }
+  
+  /* Стиль відповіді */
+  .faq-answer {
+    font-size: 1rem; /* Зменшення розміру тексту */
+    color: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin-top: 8px; /* Зменшення відступу */
+    line-height: 1.6; /* Зменшення висоти рядка */
+    font-style: italic; /* Курсив для відповіді */
+    letter-spacing: 0.4px; /* Легке збільшення міжлітерного інтервалу */
+  }
+  
+  /* Анімація для відкриття/закриття відповіді */
+  .faq-answer {
+    transition: opacity 0.3s ease, max-height 0.3s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+  }
+  
+  .faq-item.active .faq-answer {
+    max-height: 200px;
+    opacity: 1;
+  }
+  
+  /* Футер */
+  footer {
+    background-color: #2b6cb0;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
